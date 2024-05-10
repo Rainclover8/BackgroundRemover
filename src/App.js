@@ -47,12 +47,12 @@ function BackgroundRemover() {
 
   return (
     <div className="d-flex flex-column">
-      <input type="file" onChange={handleFileChange} className="border-0 w-25 p-4 rounded-5 mt-2 mx-auto" />
-      <button onClick={handleUpload} className="border-0 w-25 p-4 rounded-5 mt-2 mx-auto">Arka Planı Kaldır</button>
+      <input type="file" onChange={handleFileChange} className="border-0 w-50 p-4 rounded-5 mt-2 mx-auto" />
+      <button onClick={handleUpload} className="border-0 w-50 p-4 rounded-5 mt-2 mx-auto">Arka Planı Kaldır</button>
       {processedImage && (
         <div>
           <img src={processedImage} alt="Processed" className="border-0 w-50 mt-2 mx-auto" />
-          <button onClick={handleDownload} className="border-0 w-25 p-4 rounded-5 mt-2 mx-auto">Resmi İndir</button>
+          <button onClick={handleDownload} className="border-0 w-50 p-4 rounded-5 mt-2 mx-auto">Resmi İndir</button>
         </div>
       )}
     </div>
